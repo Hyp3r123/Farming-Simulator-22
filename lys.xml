@@ -71,3 +71,10 @@
         </beaconLights>
 
 <!-- Gejl-->
+light types 0 er det primære lys
+light types 1 er det almindelige lys
+light types 2 er det bagerste lys
+light types 3 er det lange lys
+light types 0 3 gør så at det lys du har sat den til tænder på alt lys ^ 
+    
+-->
