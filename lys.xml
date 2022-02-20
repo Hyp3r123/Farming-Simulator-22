@@ -1,0 +1,73 @@
+<lights>
+        <states>
+            <state lightTypes="0"/>
+            <state lightTypes="0 1"/>
+            <state lightTypes="0 1 2"/>
+        </states>
+        <realLights>
+            <low> <!-- Lav kvalitets lys-->
+                <light node="frontLightLow" lightTypes="0" excludedLightTypes="2 3"/>
+                <light node="workLightBackLow" lightTypes="1"/>
+                <light node="workLightFrontLow" lightTypes="2"/>
+                <light node="highBeamLow" lightTypes="3"/>
+            </low>
+            <high> <!-- Høj kvalitets lys-->
+                <light node="frontLightHigh" lightTypes="0" excludedLightTypes="2 3"/>
+                <light node="workLightBackHigh1" lightTypes="1"/>
+                <light node="workLightFrontHigh1" lightTypes="2"/>
+                <light node="highBeamHigh" lightTypes="3"/>
+                <light node="backLightsHigh1" lightTypes="0"/>
+                <light node="licensePlateLightHigh" lightTypes="0"/>
+                <light node="cabinlight" lightTypes="0 3"/>
+                <turnLightLeft node="turnLightLeftFront"/>
+                <turnLightLeft node="turnLightLeftBack"/>
+                <turnLightLeft node="turnLightLeftBack1"/>
+                <turnLightLeft node="turnLightLeftBack2"/>
+                <turnLightRight node="turnLightRightFront"/>
+                <turnLightRight node="turnLightRightBack"/>
+                <turnLightRight node="turnLightRightBack1"/>
+                <turnLightRight node="turnLightRightBack2"/>
+                <brakeLight node="backLightsHigh1"/>
+                <interiorLight node="interiorScreenLight01"/>
+                <interiorLight node="interiorScreenLight02"/>
+            </high>
+        </realLights>
+        <defaultLights> <!-- De lys du normalt ser på traktoren såsom bak lys for lygter osv men det er også her vi vil adde lys fx. trin lys-->
+            <defaultLight shaderNode="frontlightStatic01" lightTypes="0 3" intensity="15"/>
+            <defaultLight shaderNode="frontlightStatic01Glass" lightTypes="0 3" intensity="0.02"/>
+            <defaultLight shaderNode="frontlightStatic02" lightTypes="0 3"/>
+            <defaultLight shaderNode="frontlightStatic03" lightTypes="0"/>
+            <defaultLight shaderNode="frontlightStatic04" lightTypes="0"/>
+            <defaultLight shaderNode="frontlightStatic06" lightTypes="0"/>
+            <defaultLight shaderNode="backlightStatic01" lightTypes="0"/>
+            <defaultLight shaderNode="backlightStatic03" lightTypes="0"/>
+            <defaultLight shaderNode="numberplateLightsStatic" lightTypes="0"/>
+            <defaultLight shaderNode="worklightBackStatic01" lightTypes="1"/>
+            <defaultLight shaderNode="worklightBackStatic01Glass" lightTypes="1" intensity="5"/>
+            <defaultLight shaderNode="worklightFrontStatic01" lightTypes="2"/>
+            <defaultLight shaderNode="worklightFrontStatic01Glass" lightTypes="2" intensity="5"/>
+            <defaultLight shaderNode="worklightFrontStatic02" lightTypes="2"/>
+            <defaultLight shaderNode="worklightFrontStatic02Glass" lightTypes="2" intensity="5"/>
+            <defaultLight shaderNode="0>0|12|0|2|0" lightTypes="0 3"/> <!--Dette er et trinlys. "shaderNode="" i mellem de to gåse tegn skal du skrive noden som du finder i GE  "-->
+        </defaultLights>
+        <turnLights> <!-- Blinklys osv-->
+            <turnLightLeft shaderNode="turnlightLeftStatic01"/>
+            <turnLightLeft shaderNode="turnlightLeftStatic02"/>
+            <turnLightLeft shaderNode="turnlightLeftStatic03"/>
+            <turnLightLeft shaderNode="turnlightLeftStatic04"/>
+            <turnLightRight shaderNode="turnlightRightStatic01"/>
+            <turnLightRight shaderNode="turnlightRightStatic02"/>
+            <turnLightRight shaderNode="turnlightRightStatic03"/>
+            <turnLightRight shaderNode="turnlightRightStatic04"/>
+        </turnLights>
+        <brakeLights> <!-- Bremse lys-->
+            <brakeLight shaderNode="backlightStatic01"/>
+            <brakeLight shaderNode="backlightStatic03"/>
+        </brakeLights>
+        <beaconLights> <!-- Rotorblink -->
+            <beaconLight node="beaconLightStatic" intensity="1000" multiBlink="true">
+                <realLight node="beaconLightHigh"/>
+            </beaconLight>
+        </beaconLights>
+
+<!-- Gejl-->
