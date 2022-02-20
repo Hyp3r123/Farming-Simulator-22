@@ -1,1 +1,10 @@
-Denne fil er lavet for at dem som ikke kan modde/konventere ting i fs22 kan lære det 
+Denne fil er lavet for at dem som ikke kan modde/konventere ting i fs22 kan lære det. Det skal lige siges at det nok er bedst vis du har genskab til et andet programmerings sprog da det ellers kan virke ret umuligt at overskue. 
+
+
+  Dette er en liste over alle de ting der kommer til at være i denne git
+  
+1. lys.xml (Hvordan man laver lys. bak lys, gejl lys osv)
+2. dæk.xml (Hvordan man laver dæk)
+3. particle.xml (Røg particler og particler for vogne)
+4. konventere.xml (Lidt over hvordan man konventere)
+5. texture.xml (obs dette er ikke noget der kommer lige med det samme)
