@@ -1,4 +1,6 @@
-Denne fil er lavet for at dem som ikke kan modde/konventere ting i fs22 kan lære det. Det skal lige siges at det nok er bedst vis du har genskab til et andet programmerings sprog da det ellers kan virke ret umuligt at overskue. 
+Denne fil er lavet for at dem som ikke kan modde/konventere ting i fs22 kan lære det.
+Det skal lige siges at det nok er bedst vis du har genskab til et andet programmerings sprog da det ellers kan virke ret umuligt at overskue.
+OBS!! Det er bedst vis du forstår og læser engelsk ret godt
 
 
   Dette er en liste over alle de ting der kommer til at være i denne git
