@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="s1_500" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="$data/fs19support/shaders/vehicleShader.xml"/>
+    <File fileId="7" filename="textures/Claas_Terminal.dds"/>
+    <File fileId="8" filename="textures/Isobus_Terminal.dds"/>
+    <File fileId="9" filename="textures/Isobus_Terminal_Poettinger.dds"/>
+    <File fileId="12" filename="textures/JD_bale.dds"/>
+    <File fileId="10" filename="textures/JenzBedienpul.dds"/>
+    <File fileId="11" filename="textures/JenzEasygreen.dds"/>
+    <File fileId="13" filename="textures/KroneCCI200.dds"/>
+    <File fileId="14" filename="textures/StrautmannTerminal.dds"/>
+    <File fileId="2" filename="textures/Terminal_specular.dds"/>
+    <File fileId="15" filename="textures/Vaederstad_Terminal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Terminal" materialId="40" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="3" customShaderVariation="colorMask">
+      <Glossmap fileId="2"/>
+      <CustomParameter name="RDT" value="0 0.17 0.045 17"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.119 0.085 0.0428 17"/>
+      <CustomParameter name="colorMat1" value="0.01 0.01 0.01 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="Decal" materialId="27" alphaBlending="true" customShaderId="3" customShaderVariation="Decal">
+      <Texture fileId="10"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="Terminal" materialId="26" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="3" customShaderVariation="colorMask">
+      <Glossmap fileId="2"/>
+      <CustomParameter name="RDT" value="1 0.85 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0 0 1"/>
+      <CustomParameter name="colorMat2" value="1 1 0 1"/>
+      <CustomParameter name="colorMat3" value="0 1 0 1"/>
+      <CustomParameter name="colorMat4" value="1 1 1 1"/>
+      <CustomParameter name="colorMat5" value="0.2 0.2 0.2 17"/>
+      <CustomParameter name="colorMat6" value="0.1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="Claas" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="3" customShaderVariation="colorMask">
+      <Glossmap fileId="2"/>
+      <CustomParameter name="RDT" value="0 0.88 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.25 0.25 0.25 17"/>
+      <CustomParameter name="colorMat1" value="0 0 0 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="Decal" materialId="20" alphaBlending="true" customShaderId="3" customShaderVariation="Decal">
+      <Texture fileId="9"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="Decal_Claas" materialId="4" alphaBlending="true" customShaderId="3" customShaderVariation="Decal">
+      <Texture fileId="7"/>
+      <Glossmap fileId="2"/>
+      <CustomParameter name="RDT" value="0 0.89 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="Decal_Vaederstadt" materialId="61" alphaBlending="true" customShaderId="3" customShaderVariation="Decal">
+      <Texture fileId="15"/>
+      <CustomParameter name="RDT" value="0 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="Terminal" materialId="48" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="3" customShaderVariation="colorMask">
+      <Glossmap fileId="2"/>
+      <CustomParameter name="RDT" value="1 0.54 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat1" value="0.4 0.4 0.4 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="Decal" materialId="41" alphaBlending="true" customShaderId="3" customShaderVariation="Decal">
+      <Texture fileId="12"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="Decal" materialId="47" alphaBlending="true" customShaderId="3" customShaderVariation="Decal">
+      <Texture fileId="13"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="Vaederstadt" materialId="62" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="3" customShaderVariation="colorMask">
+      <Glossmap fileId="2"/>
+      <CustomParameter name="RDT" value="0 0.94 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.1 0.1 3"/>
+      <CustomParameter name="colorMat1" value="0.8 0.8 0.8 1"/>
+      <CustomParameter name="colorMat2" value="0.02 0.02 0.02 1"/>
+      <CustomParameter name="colorMat3" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="Decal" materialId="14" alphaBlending="true" customShaderId="3" customShaderVariation="Decal">
+      <Texture fileId="8"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="Terminal" materialId="13" customShaderId="3" customShaderVariation="colorMask">
+      <Glossmap fileId="2"/>
+      <CustomParameter name="RDT" value="1 0.64 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.01 0.01 0.01 1"/>
+      <CustomParameter name="colorMat1" value="0.5 0.5 0.5 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="Terminal" materialId="33" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="3" customShaderVariation="colorMask">
+      <Glossmap fileId="2"/>
+      <CustomParameter name="RDT" value="1 0.48 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0 0.201 0.0955 1"/>
+      <CustomParameter name="colorMat1" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat2" value="1 0 0 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="Decal" materialId="34" alphaBlending="true" customShaderId="3" customShaderVariation="Decal">
+      <Texture fileId="11"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="Decal" materialId="54" alphaBlending="true" customShaderId="3" customShaderVariation="Decal">
+      <Texture fileId="14"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="Terminal" materialId="55" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="3" customShaderVariation="colorMask">
+      <Glossmap fileId="2"/>
+      <CustomParameter name="RDT" value="0.05 0.55 0.05 1"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 1 1 4"/>
+      <CustomParameter name="colorMat2" value="0 1 0 4"/>
+      <CustomParameter name="colorMat3" value="1 1 1 3"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="terminals.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="Claas_Terminal" clipDistance="50" nodeId="9" materialIds="5" castsShadows="true" receiveShadows="true">
+      <Shape shapeId="2" name="Decal" translation="0 0 0.000130262" nodeId="10" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    </Shape>
+    <Shape shapeId="3" name="Lemken_Isobus_Terminal" clipDistance="30" nodeId="18" materialIds="13" castsShadows="true" receiveShadows="true">
+      <Shape shapeId="4" name="Decal" clipDistance="30" nodeId="19" materialIds="14" castsShadows="true" receiveShadows="true"/>
+    </Shape>
+    <Shape shapeId="3" name="Poettinger_Terminal" clipDistance="30" nodeId="24" materialIds="13" castsShadows="true" receiveShadows="true">
+      <Shape shapeId="4" name="Decal" clipDistance="30" nodeId="25" materialIds="20" castsShadows="true" receiveShadows="true"/>
+    </Shape>
+    <Shape shapeId="5" name="Jenz_Bedienteil" clipDistance="30" nodeId="31" materialIds="26" castsShadows="true" receiveShadows="true">
+      <Shape shapeId="6" name="Decal" clipDistance="30" nodeId="32" materialIds="27" castsShadows="true" receiveShadows="true"/>
+    </Shape>
+    <Shape shapeId="7" name="JenzEasygreen" clipDistance="30" nodeId="38" materialIds="33" castsShadows="true" receiveShadows="true">
+      <Shape shapeId="8" name="Decal" clipDistance="30" nodeId="39" materialIds="34" castsShadows="true" receiveShadows="true"/>
+    </Shape>
+    <Shape shapeId="9" name="JD_Pressenterminal" clipDistance="30" nodeId="45" materialIds="40" castsShadows="true" receiveShadows="true">
+      <Shape shapeId="10" name="Decal" clipDistance="30" nodeId="46" materialIds="41" castsShadows="true" receiveShadows="true"/>
+    </Shape>
+    <Shape shapeId="11" name="KronePresse" clipDistance="30" nodeId="52" materialIds="48" castsShadows="true" receiveShadows="true">
+      <Shape shapeId="12" name="Decal" translation="0 0 0.0001" clipDistance="30" nodeId="53" materialIds="47" castsShadows="true" receiveShadows="true"/>
+    </Shape>
+    <Shape shapeId="13" name="Strautmann_Terminal" clipDistance="30" nodeId="59" materialIds="55" castsShadows="true" receiveShadows="true">
+      <Shape shapeId="14" name="Decal" translation="0 0 0.001" clipDistance="30" nodeId="60" materialIds="54" castsShadows="true" receiveShadows="true"/>
+    </Shape>
+    <Shape shapeId="15" name="Vaederstad_Terminal" clipDistance="50" nodeId="66" materialIds="62" castsShadows="true" receiveShadows="true">
+      <Shape shapeId="16" name="Decal" clipDistance="50" nodeId="67" materialIds="61" castsShadows="true" receiveShadows="true"/>
+    </Shape>
+  </Scene>
+
+</i3D>

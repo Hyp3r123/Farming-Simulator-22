@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="series8R" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="texture/Bord.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="blinn1" materialId="4">
+      <Texture fileId="1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="bord.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="Bord" translation="-0.442224 0.417 0.41191" rotation="0 -9.69638 0" scale="0.167342 0.250492 0.188889" nodeId="7" materialIds="4" castsShadows="true" receiveShadows="true"/>
+  </Scene>
+
+</i3D>

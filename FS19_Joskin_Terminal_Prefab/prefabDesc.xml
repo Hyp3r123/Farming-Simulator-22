@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>LT-Modding, </author>
+    <version>1.0.0.0</version>
+	<title>
+    <en>Joskin Terminal</en>
+	<de>Joskin Terminal</de>
+	<fr>Joskin Terminal</fr>
+    </title>
+	<description>
+<en><![CDATA[Expand your tractor with a Terminal in the cab! In order to easily operate the increasing number of hydraulic functions on agricultural machines and at the same time protect the material and pastures, an automatic management system is absolutely necessary.]]></en>
+<de><![CDATA[Erweitern Sie Ihren Traktor mit einem Terminal in der Kabine! Um die zunehmende Anzahl von Hydraulikfunktionen an landwirtschaftlichen Maschinen problemlos bedienen und gleichzeitig Material und Weiden schützen zu können, ist ein automatisches Managementsystem unbedingt erforderlich.]]></de>
+<fr><![CDATA[Développez votre tracteur avec un terminal dans la cabine! Afin d'exploiter facilement le nombre croissant de fonctions hydrauliques sur les machines agricoles et en même temps de protéger le matériel et les pâturages, un système de gestion automatique est absolument nécessaire.]]></fr>
+</description>
+    <iconFilename>modIcon.dds</iconFilename>
+	<categories>
+		<category>Other</category>
+	</categories>
+	<prefabs>
+		<prefab name="Terminal" i3dFilename="JoskinTerminal.i3d" />
+    </prefabs>	
+</prefabDesc>

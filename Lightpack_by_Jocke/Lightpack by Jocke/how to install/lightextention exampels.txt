@@ -1,0 +1,16 @@
+left to right example
+	<lightExtension>  <! -- OPTION 1: Light models built into vehicle. -->  
+		<strobeLights disableRealLightWarning="true">
+			<! -- lightNode  = Previous generation coronas. --> 
+			< strobeLight lightShaderNode="index path" shaderIntensity="500"  sequence="25 75 75" />
+			< strobeLight lightShaderNode="index path" shaderIntensity="500"  sequence="50 75 75" />
+		</strobeLights>
+	</lightExtension>
+all at once
+	<lightExtension>  <! -- OPTION 1: Light models built into vehicle. -->  
+		<strobeLights disableRealLightWarning="true">
+			<! -- lightNode  = Previous generation coronas. --> 
+			< strobeLight lightShaderNode="index path" shaderIntensity="500"  sequence="75 75 75" />
+			< strobeLight lightShaderNode="index path" shaderIntensity="500"  sequence="75 75 75" />
+		</strobeLights>
+	</lightExtension>

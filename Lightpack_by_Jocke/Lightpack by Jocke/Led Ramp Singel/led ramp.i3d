@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="ScaniaR" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.1"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/fs19support/shaders/vehicleShader.xml"/>
+    <File fileId="2" filename="$data/shared/default_normal.dds"/>
+    <File fileId="3" filename="$data/shared/default_specular.dds"/>
+    <File fileId="8" filename="$data/shared/window_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="i3d_default_material" materialId="4" specularColor="0.6 1 0" alphaBlending="true">
+      <Texture fileId="8"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="i3d_default_material" materialId="5" diffuseColor="0.8 0.8 0.8 1" specularColor="0.6 1 0" customShaderId="4" customShaderVariation="staticLight">
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+    </Material>
+    <Material name="i3d_default_material" materialId="6" diffuseColor="0.8 0.8 0.8 1" specularColor="0.6 1 0" customShaderId="4" customShaderVariation="staticLight">
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="5 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+    </Material>
+    <Material name="i3d_default_material" materialId="7" diffuseColor="0.8 0.8 0.8 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0 0 0 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="led ramp.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="orange" translation="-1.25983 -0.0295431 1.10138e-07" rotation="-1.17896e-21 180 3.28553e-15" scale="11 12.6 11" nodeId="17">
+        <Shape shapeId="1" name="mounting right" translation="-0.018957 -0.00157141 0" rotation="90 -90 0" nodeId="18" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="mounting left" translation="0.0189566 -0.00157141 0" rotation="90 90 0" nodeId="19" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="Cube" scale="9.48 0.71 0.7" nodeId="20" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="glass" translation="0 0 0.00138719" rotation="90 -0 0" scale="17 1 1" nodeId="21" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="static" nodeId="22">
+          <Shape shapeId="5" name="static" translation="0 0 0.00133812" rotation="90 90 0" scale="1 0.97 1" nodeId="23" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="orange" translation="0 -0.000729907 0.00126483" scale="35.05 0.62 0.183885" nodeId="24" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="red" translation="-1.25989 -0.0860226 5.68854e-10" rotation="-1.75191e-20 180 -8.49492e-15" scale="11 14 11" nodeId="25">
+        <Shape shapeId="1" name="mounting right" translation="-0.018957 -0.00157141 0" rotation="90 -90 0" nodeId="26" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="mounting left" translation="0.0189566 -0.00157141 0" rotation="90 90 0" nodeId="27" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="Cube" scale="9.48 0.71 0.7" nodeId="28" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="glass" translation="0 0 0.00138719" rotation="90 -0 0" scale="17 1 1" nodeId="29" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="static" nodeId="30">
+          <Shape shapeId="5" name="static" translation="0 0 0.00133812" rotation="90 90 0" scale="1 0.97 1" nodeId="31" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="red" translation="0 -0.000729907 0.00126483" scale="35.05 0.62 0.183885" nodeId="32" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="white" translation="-1.26366 0.0239374 1.10472e-07" rotation="0 180 0" scale="11 12.6 11" nodeId="33">
+        <Shape shapeId="1" name="mounting right" translation="-0.018957 -0.00157141 0" rotation="90 -90 0" nodeId="34" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="mounting left" translation="0.0189566 -0.00157141 0" rotation="90 90 0" nodeId="35" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="Cube" scale="9.48 0.71 0.7" nodeId="36" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="glass" translation="0 0 0.00138719" rotation="90 -0 0" scale="17 1 1" nodeId="37" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="static" nodeId="38">
+          <Shape shapeId="5" name="static" translation="0 0 0.00133812" rotation="90 90 0" scale="1 0.97 1" nodeId="39" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="8" name="white" translation="0 -0.000729907 0.00126483" scale="35.05 0.62 0.183885" nodeId="40" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="no drl" translation="-1.25983 -0.0295431 1.10138e-07" rotation="-1.17896e-21 180 3.28553e-15" scale="11 12.6 11" nodeId="41">
+        <Shape shapeId="1" name="mounting right" translation="-0.018957 -0.00157141 0" rotation="90 -90 0" nodeId="42" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="mounting left" translation="0.0189566 -0.00157141 0" rotation="90 90 0" nodeId="43" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="Cube" scale="9.48 0.71 0.7" nodeId="44" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="glass" translation="0 0 0.00138719" rotation="90 -0 0" scale="17 1 1" nodeId="45" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="static" nodeId="46">
+          <Shape shapeId="5" name="static" translation="0 0 0.00133812" rotation="90 90 0" scale="1 0.97 1" nodeId="47" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,12 @@
+
+
+    <dashboard>
+        <default>
+			<dashboard displayType="EMITTER" node="Starfirelight" idleValue="0" intensity="100" groups="MOTOR_ACTIVE" />
+        </default>
+    </dashboard>
+
+ <i3dMappings>
+     <i3dMapping id="Starfirelight" node="!!!!index_hier_rein!!!!"/>	
+ </i3dMappings>
+

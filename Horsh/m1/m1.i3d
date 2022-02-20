@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="8RSeries" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.2.1"/>
+    </Asset>
+    <Files>
+        <File fileId="2" filename="Program Files (x86)/Steam/steamapps/common/Farming Simulator 19/data/fs17support/shaders/fs17VehicleShader.xml"/>
+        <File fileId="1" filename="rohozka/Doplnky/rohozka/rohozka.dds"/>
+    </Files>
+    <Materials>
+        <Material name="acmat_7" materialId="9" customShaderId="2">
+            <Texture fileId="1"/>
+            <CustomParameter name="RDT" value="0.24 0 42.7 11.8"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="m1.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <Shape shapeId="1" name="m1" translation="0.488317 0.16001 0.401048" rotation="90 -42.5534 -180" scale="0.718771 2.94403 1.01277" nodeId="876" materialIds="9" castsShadows="true" receiveShadows="true"/>
+    </Scene>
+</i3D>

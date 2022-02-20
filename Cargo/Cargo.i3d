@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="series6R" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="7" filename="$data/shared/clearGlass_diffuse.dds"/>
+    <File fileId="2" filename="Spec.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Glas" materialId="4" alphaBlending="true" customShaderId="3" customShaderVariation="colorMask">
+      <Texture fileId="7"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="0 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="1 1 1 2"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="lambert2" materialId="5" diffuseColor="0 0.0392157 1 0.713726" alphaBlending="true" customShaderId="3" customShaderVariation="staticLight">
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+    </Material>
+    <Material name="Lampe" materialId="6" diffuseColor="0.8 0.8 0.8 1" customShaderId="3" customShaderVariation="colorMask">
+      <Glossmap fileId="2"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.02 0.02 0.02 1"/>
+      <CustomParameter name="colorMat1" value="0.7 0.7 0.7 2"/>
+      <CustomParameter name="colorMat2" value="0.7 0.7 0.7 2"/>
+      <CustomParameter name="colorMat3" value="0.7 0.7 0.7 2"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="Lys1" materialId="7" diffuseColor="0.8 0.8 0.8 1" customShaderId="3" customShaderVariation="staticLight">
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.7 0.7 0.7 2"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+    </Material>
+    <Material name="lys2" materialId="8" diffuseColor="0.8 0.8 0.8 1" customShaderId="3" customShaderVariation="staticLight">
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat2" value="0.7 0.7 0.7 2"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Cargo.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="Cargo" translation="0.85 2.09 0.62" rotation="-180 0 -180" clipDistance="300" nodeId="16" materialIds="6" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="2" name="Inderside" clipDistance="300" nodeId="17" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="lys1" clipDistance="300" nodeId="18" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="Lys2" clipDistance="300" nodeId="19" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="5" name="Glas" clipDistance="300" nodeId="20" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="6" name="blue dirode" translation="-0.000392939 -0.0629887 0.021761" scale="0.0987917 0.100147 0.0909096" nodeId="21" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+  </Scene>
+
+</i3D>

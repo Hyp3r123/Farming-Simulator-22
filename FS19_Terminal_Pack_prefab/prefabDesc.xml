@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1.0">
+    <author>LS-Modding/820PowerLS</author>
+    <version>1.0.0.0</version>
+	<title>
+        <en>Terminal pack</en>
+    </title>
+	<description>
+        <en><![CDATA[This terminals can be used for improve your machines]]></en>
+		<de><![CDATA[Diese Terminals können als Verschönerung an euren Maschinen dienen]]></de>
+    </description>
+	<categories>
+        <category>Other</category>
+        <category>Static</category>
+    </categories>
+	<prefabs>
+		<prefab name="Terminal pack" i3dFilename="terminals.i3d"/>
+    </prefabs>
+</prefabDesc>

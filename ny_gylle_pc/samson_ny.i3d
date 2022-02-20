@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="series8R" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="SM80001ON.dds"/>
+    <File fileId="8" filename="SM80002.dds"/>
+    <File fileId="7" filename="SM80003ON.dds"/>
+    <File fileId="4" filename="SM80005.dds"/>
+    <File fileId="3" filename="SMDisplay.dds"/>
+    <File fileId="1" filename="aluminium_diffuse.dds"/>
+    <File fileId="2" filename="grey_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="blinn1" materialId="4">
+      <Texture fileId="5"/>
+    </Material>
+    <Material name="blinn2" materialId="5">
+      <Texture fileId="4"/>
+    </Material>
+    <Material name="blinn4" materialId="6">
+      <Texture fileId="8"/>
+    </Material>
+    <Material name="blinn5" materialId="7">
+      <Texture fileId="7"/>
+    </Material>
+    <Material name="blinn6" materialId="8">
+      <Texture fileId="3"/>
+    </Material>
+    <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert6" materialId="10">
+      <Texture fileId="1"/>
+    </Material>
+    <Material name="lambert7" materialId="11">
+      <Texture fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="samson_ny.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="gylle_ny" nodeId="21">
+        <Shape shapeId="1" name="Halterung" translation="-0.579146 0.539349 -0.0459862" rotation="90.9685 0 90" scale="0.151706 1 1" clipDistance="300" nodeId="22" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="Halterung" translation="-0.502002 0.418126 -0.0433078" rotation="90 -1.26377 -31.197" scale="0.190174 1 1" clipDistance="300" nodeId="23" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="Stange" translation="-0.544148 0.609708 -0.0424316" rotation="0 90 -3.96105e-07" clipDistance="300" nodeId="24" materialIds="11" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="Stange" translation="-0.447118 0.433014 -0.0417751" rotation="90 -90 180" clipDistance="300" nodeId="25" materialIds="11" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="Slurry Master 8000" translation="-0.0394637 0.740855 0.167328" rotation="0 90 -2.94711e-06" nodeId="26">
+          <Shape shapeId="3" name="Skaerm" translation="0.230801 0.208066 -1.42734" rotation="90 -0 0" scale="1 1 0.756" nodeId="27" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="kontrolpanel" translation="0.241769 -0.273485 -0.396839" scale="1.32 0.8 1.32" nodeId="28">
+            <Shape shapeId="4" name="polySurface18" translation="-0.380473 0.137633 0.0702651" nodeId="29" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="pCube1" nodeId="30" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="6" name="pCylinder55" translation="-0.272446 0.0886128 -0.0413471" nodeId="31" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="6" name="pCylinder105" translation="-0.272446 0.0886128 0.172223" nodeId="32" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="6" name="pCylinder106" translation="-0.490258 0.0886128 0.172223" nodeId="33" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="6" name="pCylinder107" translation="-0.490258 0.0886128 -0.0413471" nodeId="34" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="pCylinder108" nodeId="35" materialIds="7,6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="polySurface9" nodeId="36" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

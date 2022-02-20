@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="John Deere 8400" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="Coca.dds" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="blinn1" materialId="42" ambientColor="1 1 1">
+      <Texture fileId="1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="pepsi.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="pCylinder5" translation="-0.57163 1.57474 0" rotation="0 -45.5239 0" scale="0.05 0.05 0.05" nodeId="370" materialIds="42" castsShadows="true" receiveShadows="true"/>
+  </Scene>
+
+</i3D>

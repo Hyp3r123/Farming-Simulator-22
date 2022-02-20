@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="8RSeries" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.2.1"/>
+    </Asset>
+    <Files>
+        <File fileId="9" filename="$data/fs19support/shaders/vehicleShader.xml"/>
+        <File fileId="14" filename="Panel Annaburger/textures/StrautmannTerminal.dds"/>
+        <File fileId="8" filename="Panel Annaburger/textures/Terminal_specular.dds"/>
+        <File fileId="13" filename="Panel Annaburger/textures/Vaederstad_Terminal.dds"/>
+        <File fileId="4" filename="hrosch_nalepka_CB/TM_RT/Horsch_texture.dds"/>
+        <File fileId="6" filename="hrosch_nalepka_CB/TM_RT/M_0134_DimGray.dds"/>
+        <File fileId="1" filename="hrosch_nalepka_CB/TM_RT/drziak.png"/>
+        <File fileId="3" filename="hrosch_nalepka_CB/TM_RT/horsch_drziak.png"/>
+    </Files>
+    <Materials>
+        <Material name="Color_008" materialId="26" specularColor="0.0941177 1 0.0941177">
+            <Texture fileId="3"/>
+        </Material>
+        <Material name="Color_G11" materialId="27" specularColor="0.0941177 1 0.0941177">
+            <Texture fileId="1"/>
+        </Material>
+        <Material name="Decal" materialId="31" alphaBlending="true" customShaderId="9" customShaderVariation="Decal">
+            <Texture fileId="14"/>
+            <CustomParameter name="RDT" value="1 1 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Decal_Vaederstadt" materialId="32" alphaBlending="true" customShaderId="9" customShaderVariation="Decal">
+            <Texture fileId="13"/>
+            <CustomParameter name="RDT" value="0 1 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="FrontColor" materialId="51" specularColor="0.0431373 1 0.0431373">
+            <Texture fileId="4"/>
+        </Material>
+        <Material name="M_0134_DimGray" materialId="76">
+            <Texture fileId="6"/>
+            <Emissivemap fileId="6"/>
+        </Material>
+        <Material name="Terminal" materialId="128" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="9" customShaderVariation="colorMask">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0.05 0.55 0.05 1"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorMat0" value="0.05 0.05 0.05 1"/>
+            <CustomParameter name="colorMat1" value="1 1 1 4"/>
+            <CustomParameter name="colorMat2" value="0 1 0 4"/>
+            <CustomParameter name="colorMat3" value="1 1 1 3"/>
+            <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+            <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+            <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+            <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+        </Material>
+        <Material name="Vaederstadt" materialId="133" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="9" customShaderVariation="colorMask">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0.94 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorMat0" value="0.8 0.1 0.1 3"/>
+            <CustomParameter name="colorMat1" value="0.8 0.8 0.8 1"/>
+            <CustomParameter name="colorMat2" value="0.02 0.02 0.02 1"/>
+            <CustomParameter name="colorMat3" value="0.05 0.05 0.05 1"/>
+            <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+            <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+            <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+            <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="Horsh.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="Horsh" translation="-0.570358 0.998773 -0.223374" rotation="90 88.1286 90" scale="0.5 0.5 0.5" nodeId="877">
+            <Shape shapeId="1" name="Mesh.001" translation="0.879941 -0.0907439 -0.186272" rotation="-90 -89.8749 -180" scale="0.8 1 0.8" nodeId="878" materialIds="27" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="transform" translation="-0.210633 -0.0327249 0" nodeId="879">
+                <Shape shapeId="2" name="Mesh.003" translation="0 -0.115897 -0.191227" rotation="90 26.4832 1.2027e-06" scale="0.1 0.1 0.1" nodeId="880" materialIds="26,26" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="Horsch" translation="0.0578801 -0.000226305 0.0319652" rotation="-14.3652 27.3474 0.565826" scale="0.1 0.1 0.1" nodeId="881">
+                    <Shape shapeId="3" name="Mesh.001" rotation="90 -0 -0" nodeId="882" materialIds="51,51,51,51,51" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="4" name="Mesh.001" translation="0 1.29086 0.331364" rotation="90 -0 -0" nodeId="883" materialIds="76" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+            </TransformGroup>
+            <Shape shapeId="2" name="Mesh.003" translation="0.333232 -0.133167 -0.191227" rotation="90 26.4832 1.2027e-06" scale="0.1 0.1 0.1" nodeId="884" materialIds="26,26" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="Vaederstad_Terminal" translation="0.700909 0.087778 -0.160971" scale="1.555 1.555 1.555" clipDistance="50" nodeId="885" materialIds="133" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="6" name="Decal" clipDistance="50" nodeId="886" materialIds="32" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="7" name="Strautmann_Terminal" translation="0.325234 0.178031 -0.00601817" rotation="-11.1716 18.1868 0.866432" scale="0.586479 0.586479 0.586479" clipDistance="30" nodeId="887" materialIds="128" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="8" name="Decal" translation="0 0 0.001" clipDistance="30" nodeId="888" materialIds="31" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+        </TransformGroup>
+    </Scene>
+</i3D>
