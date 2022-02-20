@@ -1,0 +1,35 @@
+<!-- Before you start you need to understand a bit of programming else this can seem impossible to understand.
+XML programming language looks alot like HTML5 but it isn't the same thing. Tho i recommend you have some experince -->
+
+
+
+
+
+
+<!-- lights -->
+
+    <lights>
+		<sharedLight linkNode="Example light" filename="$data/shared/assets/lights/lizard/sideMarker04_left.xml" /> <!-- this is an example light i made. If you were to put this on an tractor or trailer it would be a
+        side marker on the left side   -->
+        <realLights>
+            <high>
+                <light node="backLightsHigh" lightTypes="0"/>
+                <turnLightLeft node="turnLightLeftBack"/>
+                <turnLightRight node="turnLightRightBack"/>
+                <brakeLight node="backLightsHigh"/>
+				<light node="BbackLightsHigh" lightTypes="0"/>
+                <turnLightLeft node="BturnLightLeftBack"/>
+                <turnLightRight node="BturnLightRightBack"/>
+                <brakeLight node="BbackLightsHigh"/>
+            </high>
+        </realLights>
+        <defaultLights>
+            <defaultLight shaderNode="sidemarkerorange" lightTypes="0" intensity="200"/>
+        </defaultLights>
+        <turnLights>
+            <turnLightLeft intensity="150" shaderNode="hamburgerturnleft"/>
+        </turnLights>
+        <brakeLights>
+            <brakeLight shaderNode="hamburgerbrake" intensity="150"/>
+        </brakeLights>
+    </lights>
